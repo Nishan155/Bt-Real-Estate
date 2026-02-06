@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'realtors.apps.RealtorsConfig',
     'django.contrib.humanize',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,11 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR:'danger'
 }
+
+#Email Config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER ='nishansapkota222@gmail.com'
+EMAIL_HOST_PASSWORD ="dptkgxxiptusdfkc" 
+EMAIL_USE_TLS =True
